@@ -94,7 +94,7 @@ p{
     height: 18.75rem;
     max-width: 400px;
     max-height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .pencarian{

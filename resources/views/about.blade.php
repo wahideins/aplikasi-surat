@@ -7,7 +7,7 @@
 @section('deskripsi-halaman')
 <div class="about-page">
     <div class="foto-profil">
-        <img src="{{asset('images/pfp.jpeg')}}" alt="">
+        <img src="{{asset('images/pfp.png')}}" alt="">
     </div>
     <div class="deskripsi-profil">
         <p>Aplikasi ini dibuat oleh:</p>

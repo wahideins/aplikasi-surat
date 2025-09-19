@@ -3,12 +3,12 @@
 @section('title','Kategori ')
 
 @section('judul-halaman')
-<a href="{{route('kategori.home')}}">Kategori Surat</a> >> Tambah
+<a href="{{route('kategori.home')}}">Kategori Surat</a> >> Edit
 @endsection
 
 @section('deskripsi-halaman')
 <p>
-    Tambahkan atau edit data kategori. 
+    Edit data kategori. 
     <br> 
     Jika sudah selesai, jangan lupa untuk mengklik tombol "Simpan"
 </p>

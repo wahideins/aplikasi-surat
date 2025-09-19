@@ -8,7 +8,7 @@
 
 @section('deskripsi-halaman')
 <p>
-    Tambahkan atau edit data kategori. 
+    Tambahkan data kategori. 
     <br> 
     Jika sudah selesai, jangan lupa untuk mengklik tombol "Simpan"
 </p>
