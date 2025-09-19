@@ -11,16 +11,17 @@
 <p>Kategori: {{$surat->category->nama_kategori}}</p>
 <p>Judul: {{$surat->judul_surat}}</p>
 <p>Waktu Unggah: {{$surat->updated_at}}</p>
+<p>Nama File: {{$surat->file_path}}</p>
 @endsection
 
 @section('content-halaman')
 
-<div class="pdf-viewer">
+<div class="pdf-viewer" style="height:100vh;">
     <embed src="{{ asset('uploads/surat/' . $surat->file_path) }}" 
-       type="application/pdf" width="100%" height="400" />
+       type="application/pdf" width="100%" height="100%" />
 </div>
 
-<div class="tambah-item">
+<div class="tambah-item" style="margin:28px;">
     <button type="button" class="btn-search" onclick="window.location='{{ route('surat.home') }}'">
         << Kembali
     </button>

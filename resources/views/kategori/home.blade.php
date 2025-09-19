@@ -15,16 +15,22 @@
 @section('content-halaman')
 <div class="pencarian">
     <div class="text-search">
-        <p>Cari Surat:</p>
+        <p>Cari Kategori:</p>
     </div>
     <div class="search-field">
         <form action="{{ route('kategori.search') }}" method="GET" class="flex gap-2">
             <input type="text" name="q" value="{{ request('q') }}"
                 placeholder="Cari kategori..." class="border px-2 py-1 rounded">
+            @if(request()->has('q') && request('q') !== '')
+            <a href="{{ route('kategori.home') }}" class="btn-lihat" title="Kembali Ke Halaman Semula">
+                Reset
+            </a>
+            @endif
             <div class="btn-search">
                 <button type="submit">Cari</button>
             </div>
         </form>
+
     </div>
 </div>
 

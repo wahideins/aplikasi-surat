@@ -21,6 +21,11 @@
         <form action="{{ route('surat.search') }}" method="GET" class="flex gap-2">
             <input type="text" name="q" value="{{ request('q') }}"
                 placeholder="Cari nomor, judul, atau nama file..." class="border px-2 py-1 rounded">
+            @if(request()->has('q') && request('q') !== '')
+            <a href="{{ route('surat.home') }}" class="btn-lihat" title="Kembali Ke Halaman Semula">
+                Reset
+            </a>
+            @endif
             <div class="btn-search">
                 <button type="submit">Cari</button>
             </div>
